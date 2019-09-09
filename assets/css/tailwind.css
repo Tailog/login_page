@@ -6,6 +6,14 @@
 /*
   // Own Css Mobile
 */
+html{
+  overflow: hidden;
+}
+
+.main{
+    @apply p-5;
+  }
+
 /*
 //Background 
 */
@@ -16,14 +24,21 @@
   background-size: cover;
   height: 100vh;
 }
+
 /*
-//Logo
+//Profile
 */
 .profile{
+  @apply text-center mb-5;
+}
+/*
+//Profile Logo
+*/
+.profile-image{
   position: relative;
   @apply rounded-full border shadow h-56 w-56 mx-auto bg-white;
 }
-.profile img{
+.profile-image img{
   position: absolute;
   @apply h-56 w-56;
   top: 50%;
@@ -31,11 +46,33 @@
   transform: translate(-50%,-50%);
 }
 /*
+//Profile Text
+*/
+.profile-text{
+  @apply text-white
+}
+.profile-text h1{
+  @apply text-3xl
+}
+.profile-text p{
+  @apply text-lg
+}
+/*
 // Form
 */
 .form{
   @apply bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4
 }
+/*
+// Form Presentation
+*/
+.form-presentation{
+  @apply text-center mb-3;
+}
+.form-presentation h2{
+  @apply text-xl font-bold mb-2;
+}
+
 
 /* 
 //Login Input 
@@ -62,6 +99,53 @@
 @screen md{
   .background{
     background-image:url('./../img/bg.png');
+  }
+  .main{
+    @apply p-0 mb-0;
+  }
+  /*
+  //Profile
+  */
+  .profile{
+    @apply w-1/2 my-auto;
+  }
+  .profile-image{
+    @apply h-64 w-64;
+  }
+  .profile-image img{
+    @apply h-64 w-64;
+  }
+  /*
+  //Profile Text
+  */
+  .profile-text{
+    @apply text-white
+  }
+  .profile-text h1{
+    @apply text-4xl
+  }
+  .profile-text p{
+    @apply text-2xl
+  }
+
+  /*
+  *Form
+  */
+  .form{
+    /* @apply mb-0 w-1/2 h-screen; */
+    @apply mr-10
+  }
+  .form-container{
+    @apply w-1/2 my-auto;
+  }
+  .form-presentation{
+    @apply text-center mb-10;
+  }
+  .form-presentation h2{
+    @apply text-3xl font-bold mb-5;
+  }
+  .form-presentation p{
+    @apply text-xl mb-5;
   }
 }
 

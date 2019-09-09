@@ -635,6 +635,14 @@ video {
   // Own Css Mobile
 */
 
+html{
+  overflow: hidden;
+}
+
+.main{
+  padding: 1.25rem;
+}
+
 /*
 //Background 
 */
@@ -648,10 +656,19 @@ video {
 }
 
 /*
-//Logo
+//Profile
 */
 
 .profile{
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+/*
+//Profile Logo
+*/
+
+.profile-image{
   position: relative;
   border-radius: 9999px;
   border-width: 1px;
@@ -663,13 +680,29 @@ video {
   background-color: #fff;
 }
 
-.profile img{
+.profile-image img{
   position: absolute;
   height: 14rem;
   width: 14rem;
   top: 50%;
   left: 53%;
   transform: translate(-50%,-50%);
+}
+
+/*
+//Profile Text
+*/
+
+.profile-text{
+  color: #fff
+}
+
+.profile-text h1{
+  font-size: 1.875rem
+}
+
+.profile-text p{
+  font-size: 1.125rem
 }
 
 /*
@@ -685,6 +718,21 @@ video {
   padding-top: 1.5rem;
   padding-bottom: 2rem;
   margin-bottom: 1rem
+}
+
+/*
+// Form Presentation
+*/
+
+.form-presentation{
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.form-presentation h2{
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
 /* 
@@ -756,6 +804,78 @@ video {
 @media (min-width: 768px){
   .background{
     background-image:url('./../img/bg.png');
+  }
+
+  .main{
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  /*
+  //Profile
+  */
+
+  .profile{
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .profile-image{
+    height: 16rem;
+    width: 16rem;
+  }
+
+  .profile-image img{
+    height: 16rem;
+    width: 16rem;
+  }
+
+  /*
+  //Profile Text
+  */
+
+  .profile-text{
+    color: #fff
+  }
+
+  .profile-text h1{
+    font-size: 2.25rem
+  }
+
+  .profile-text p{
+    font-size: 1.5rem
+  }
+
+  /*
+  *Form
+  */
+
+  .form{
+    /* @apply mb-0 w-1/2 h-screen; */
+    margin-right: 2.5rem
+  }
+
+  .form-container{
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .form-presentation{
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .form-presentation h2{
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+  }
+
+  .form-presentation p{
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
   }
 }
 
