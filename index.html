@@ -11,7 +11,32 @@
   <!-- Styles-->
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
-  
+<body class="background">
+  <div class="md:flex p-5">
+    <div class="mb-5 text-center">
+      <div class="profile">
+        <img src="./assets/img/logo-sm.png" alt="Logo Santos Pierre">
+      </div>
+      <h2 class="text-3xl text-white">Pierre Santos</h2>
+      <p class="text-lg text-white">Web Developper</p>
+    </div>
+    <div class="form">
+        <form action="">
+            <div class="mb-4">
+                <label for="lastName" class="block text-gray-700 text-sm font-bold mb-2">Last Name</label>
+                <input class="login-input" type="text" name="lastName" placeholder="Last Name">
+            </div>
+            <div class="mb-4">
+                <label for="firstName" class="block text-gray-700 text-sm font-bold mb-2" >First Name</label>
+                <input class="login-input" type="text" name="firstName" placeholder="First Name">
+            </div>
+            <div class="text-center mt-5">
+                <button class="login-button">
+                    Discover Me
+                </button>
+            </div>
+        </form>
+    </div>
+  </div>
 </body>
 </html>

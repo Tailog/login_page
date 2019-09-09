@@ -2,4 +2,75 @@
 
 @tailwind components;
 
+
+/*
+  // Own Css Mobile
+*/
+/*
+//Background 
+*/
+.background{
+  background-image: url('./../img/bg-sm.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+/*
+//Logo
+*/
+.profile{
+  position: relative;
+  @apply rounded-full border shadow h-56 w-56 mx-auto bg-white;
+}
+.profile img{
+  position: absolute;
+  @apply h-56 w-56;
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%,-50%);
+}
+/*
+// Form
+*/
+.form{
+  @apply bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4
+}
+
+/* 
+//Login Input 
+*/
+.login-input{
+  @apply bg-gray-100 appearance-none border rounded py-2 px-3 text-gray-700 w-full;
+}
+.login-input::placeholder{
+  color: #718096;
+}
+.login-input:focus{
+  @apply outline-none shadow-outline;
+}
+/* Login Button */
+.login-button{
+  @apply text-base font-semibold text-white py-2 px-4 rounded-full bg-tertiary;
+}
+.login-button:hover{
+  @apply bg-teal-500;
+}
+/*
+  // Own Css Desktop
+*/
+@screen md{
+  .background{
+    background-image:url('./../img/bg.png');
+  }
+}
+
+
+
+
+
+/*bg-gray-100 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight placeholder-gray-600*/
+
+
 @tailwind utilities;
+
