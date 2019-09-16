@@ -107,7 +107,7 @@ html{
   //Profile
   */
   .profile{
-    @apply w-1/2 my-auto;
+     @apply w-full my-auto;
   }
   .profile-image{
     @apply h-64 w-64;
